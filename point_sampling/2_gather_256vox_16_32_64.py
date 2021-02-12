@@ -172,7 +172,7 @@ def get_points_from_vox(q, name_list):
 		sample_voxels = np.reshape(voxel_model_temp, (dim_voxel,dim_voxel,dim_voxel,1))
 		
 		#sample points near surface
-		batch_size = batch_size_3
+		batch_size = batch_size_3 # point sample batch size of stage 3
 		
 		sample_points = np.zeros([batch_size,3],np.uint8)
 		sample_values = np.zeros([batch_size,1],np.uint8)
